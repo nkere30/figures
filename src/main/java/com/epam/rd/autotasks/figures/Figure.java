@@ -6,8 +6,11 @@ abstract class Figure{
 
     public abstract String pointsToString();
 
+    public String onePointToString(Point point) {
+        return "(" + point.getX() + "," + point.getY() + ")";
+    }
     public String toString() {
-        return this.getClass().getSimpleName() + "[" + pointsToString() + "]";
+        return this.getClass().getSimpleName() + "[" + pointsToString()  + "]";
     }
 
     public abstract Point leftmostPoint();
